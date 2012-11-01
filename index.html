@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+
+
+  <title>jQuery Mobile page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="themes/final.min.css" />
+  <link rel="stylesheet" href="mios.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
+ 
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script> 
+  <script src="jquery.plugins.js"></script>
+  <script src="mainFunctions.js"></script>
+
+
+<!--
+  <script type="text/javascript">
+  $(document).live('orientationchange', function(){
+	  alert("change bastard" + navigator.platform);
+	 
+});
+  </script>
+  -->
+
+
+</head>
+<body>
+ <div data-role="page" data-theme="a" id="page">
+ <div data-role="header"></div>
+ <div data-role="content"><p>Configura:</p>
+ <img id="float" src="img2/volkswagen_logo.png" width="80" style=" position:absolute; z-index:100; float:right; right:20%;">
+       
+
+
+      <div data-role="controlgroup" data-type="horizontal">
+       <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="modelo" />Modelo</label>
+       <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="vc" />V. Comercial</label>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+       <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="gas" />Gasolina</label>
+       <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="diesel" />Diesel</label>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+        <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="manual" />Manual</label>
+        <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="automatica" />Automatica</label>
+        <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="dsg" />DSG</label>
+        <label><input class="ok" data-role="checkbox" data-theme="a" data-mini="true" type="checkbox" id="tiptronic" />Tiptronic</label>
+      </div>
+      <div data-role="controlgroup" data-type="horizontal">
+      <a href="javascript:void(0)"  id="reset" data-role="button" data-mini="true" data-theme="a">Reset</a>
+       
+      </div>
+      
+    
+      
+      
+        <div id="container-slide">      
+        <div id="slider-wrapper" class="sw">   
+        
+                                        <div class="slide modelo gas manualdsgtiptronic no-automatica"><h4>1200</h4><img class="resize" src="img2/TheBeetleMain_Beetle_GrisPlatino.png" alt="Slide 1" width="500"/>
+                                      
+                                        </div>
+                                     
+                                        <div id="slide2" class="slide modelo gas dsgtiptronic no-manual no-automatica"><h4>1200</h4><img class="resize" src="img2/cc_turbo_marron_roble.png" alt="Slide 2" width="500"/>
+                                       
+                                        </div>
+                                        
+                                        <div id="slide2" class="slide modelo gas manual"><h4>1200</h4><img class="resize" src="img2/nuevoGolf_COLORES_negro.png" alt="Slide 2" width="500"/>
+                                        
+                                        </div>
+                                      
+                                        <div id="slide3" class="slide modelo gas manualtiptronic no-dsg no-automatica"><h4>1200</h4><img class="resize" src="img2/ClasicoMain_CLGrisPlatino.png"  alt="Slide 3" width="500"/>
+                                       
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide modelo gas manual"><h4>1200</h4><img class="resize" src="img2/AmarilloImola.png"  alt="Slide 4" width="500"/>
+                                        
+                                        </div>
+                                        
+                                        <div id="slide5" class="slide modelo gas manual"><img class="resize" src="img2/gol_comfortline_gris_cuarzo.png"  alt="Slide 5" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide6" class="slide modelo gas manual"><img class="resize" src="img2/GolSedanMain_ComfortlineGrisSpectrus.png" alt="Slide 6" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide7" class="slide modelo gas tiptronic"><img class="resize" src="img2/GolfSWMain_TiptronicRojoSalsa.png" alt="Slide 7" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide8" class="slide modelo gas manualdsg no-tiptrinic no-automatica"><img class="resize" src="img2/GTI35Main_ManualBlancoCandy.png" alt="Slide 8" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide9" class="slide modelo gasdiesel manualdsgtiptronic no-automatica"><img class="resize" src="img2/NuevoJettaMain_StyleAzulTempest.png" alt="Slide 9" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide10" class="slide modelo gas manualdsg no-tiptronic no-automatica"><img class="resize" src="img2/JettaGLI_COLORES_rojo.png" alt="Slide 10" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide modelo gas dsgtiptronic no-manual no-automatica"><img class="resize" src="img2/NUEVO_PASSAT_v6_PLATA.png" alt="Slide 11" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide modelo gas automatica"><img class="resize" src="img2/RoutanExclusive_BlancoCala.png"  alt="Slide 12" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide modelo gas tiptronic"><img class="resize" src="img2/Tiguanmain_NativePlataReflexMetalico.png" alt="Slide 13" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide modelo gasdiesel doble-combustible tiptronic"><img class="resize" src="img2/TouaregMain_V6FsiCafe.png" alt="Slide 14" width="500"/>
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide vc diesel manual"><img class="resize" src="img/amarok.png" alt="Slide 15" width="500"  />
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide vc diesel manual"><img class="resize" src="img/crafter.png" alt="Slide 16" width="500" />
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide vc gas manual"><img class="resize" src="img/saveiro.png" alt="Slide 17" width="500" />
+                                        </div>
+                                        
+                                        <div id="slide4" class="slide vc diesel manual"><img class="resize" src="img/transporter.png" alt="Slide 18" width="500" />
+                                        </div>
+      
+      
+      
+        </div>
+          <!--- NAVIGATION BUTTONS -->
+        
+        
+        
+       
+        </div>
+      
+      
+      
+    
+      
+
+        <a href="javascript:void(0)" onclick="PreviousSlide()" id="PreviousButton" data-role="button"  data-theme="a" data-icon="arrow-l" style="width:20%; float:left; z-index:100;"></a>
+        <a href="javascript:void(0)" onclick="NextSlide()" id="NextButton" data-role="button" data-theme="a" data-icon="arrow-r" style="width:20%; float:right; z-index:100;"></a>
+
+ 
+ </div>
+ 
+ </div>
+ </body>
+</html>

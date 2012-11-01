@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+#page{
+	background:url(img2/hole.png);
+	
+	}
+.show{
+	display:block;}
+.esconde{display:none;}
+#container-slide
+{
+	position:absolute;
+    width: 500px;
+	
+	margin-left:50%;
+	left:-250px;
+	
+	overflow: hidden;
+    
+	z-index:100;
+	
+	
+}
+
+/* SET TO THE TOTAL WIDTH OF ALL DIVS */
+#slider-wrapper
+{
+    width:9500px;
+	
+	
+}
+.light{
+	overflow:auto;
+	
+	
+	-webkit-box-shadow: 10px 10px 80px 6px rgba(238, 238, 238, .6);
+box-shadow: 10px 10px 80px 6px rgba(238, 238, 238, .6);}
+
+
+.slide
+{
+    width: 500px;
+    height: 300px;
+	
+	  overflow: hidden;
+   float:left;
+}
+h4{
+	position:absolute;
+	color:#FFF;
+	display:none;
+	
+	z-index:200;}
+
+@media screen and (max-width: 480px) {
+	#container-slide{
+		width:250px;
+		left:-125px;
+		
+		}
+	#slider-wrapper
+      {
+    width:4750px;
+	
+	
+}	
+
+.slide
+{
+    width: 250px;
+    height: 180px;
+	
+	  overflow: hidden;
+   float:left;
+}
+    #gas{
+	
+	height:3px;
+	}	
+	#NextButton{
+		
+		
+	
+	
+	}
+.resize{
+	width:250px;
+	
+	}	
+
+	
+	}	
